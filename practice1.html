@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head{
+            /* border:1px solid red; */
+            text-align: center;
+
+        }
+        #head>p{
+            width:30%;
+            margin:auto;
+            margin-top: -20px;
+        }
+        #head>h1{
+            font-size: 60px;
+        }
+        #body{
+            /* border:1px solid red; */
+            width:70%;
+            
+            margin:auto;
+            margin-top: 50px;
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 400px;
+            gap:20px
+        }
+        #body>div{
+           
+           /* border:1px solid red; */
+           text-align: center;
+        }
+        #body>div>img{
+            width:100%
+        }
+        #body>div>p{
+            color:rgb(231, 117, 24)
+        }
+        @media all and (min-width:480px ) and (max-width:720px){
+            #body{
+            /* border:1px solid red; */
+           width:100%;
+        
+            
+            
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,auto);
+            gap:20px
+        }
+        #head>p{
+            width:60%;
+            margin:auto;
+            margin-top: -20px;
+        }
+        #head>h1{
+            font-size: 40px;
+        }
+        }
+        @media all and (min-width:320px ) and (max-width:479px){
+            #body{
+            /* border:1px solid red; */
+           width:100%;
+        
+            
+            
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(3,auto);
+            
+        }
+        #head>p{
+            width:80%;
+            margin:auto;
+            margin-top: -20px;
+        }
+        #head>h1{
+            font-size: 30px;
+        }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="head"><h1>Rooms & Suits</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis praesentium veritatis iure sit quo animi cupiditate modi quidem beatae nostrum?</p></div>
+   <div id="body">
+        <div>
+            <img src="https://preview.colorlib.com/theme/sogo/images/ximg_1.jpg.pagespeed.ic.sI14MfHd8f.webp" alt="">
+         <h1>Single Room</h1>
+         <p>90$ PER NIGHT</p>
+        </div>
+        <div>
+            <img src="https://preview.colorlib.com/theme/sogo/images/ximg_1.jpg.pagespeed.ic.sI14MfHd8f.webp" alt="">
+            <h1>Single Room</h1>
+            <p>90$ PER NIGHT</p>
+        </div>
+        <div>
+            <img src="https://preview.colorlib.com/theme/sogo/images/ximg_1.jpg.pagespeed.ic.sI14MfHd8f.webp" alt="">
+            <h1>Single Room</h1>
+            <p>90$ PER NIGHT</p>
+        </div>
+   </div>
+</body>
+</html>
